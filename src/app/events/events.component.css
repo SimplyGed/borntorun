@@ -1,0 +1,6 @@
+.content {
+    background-size: cover;
+    background-image: url("../../assets/events.jpg");
+    background-position: center;
+    height: 100vh;
+}

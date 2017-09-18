@@ -1,0 +1,40 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 0;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li > a {
+    color: white;
+    margin: 0 2px;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.navbar-nav > .active > a {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-toggle {
+    border-radius: 2px;
+}
