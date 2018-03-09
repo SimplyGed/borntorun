@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "root": "src",
+      "root": "src/client",
       "outDir": "dist",
       "assets": [
         "assets",
@@ -19,14 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "btr",
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],
-      "environmentSource": "environments/environment.ts",
+      "environmentSource": "client/environments/environment.ts",
       "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "dev": "client/environments/environment.ts",
+        "prod": "client/environments/environment.prod.ts"
       }
     }
   ],
@@ -37,13 +37,13 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "src/client/tsconfig.app.json"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "src/client/tsconfig.spec.json"
     },
     {
-      "project": "e2e/tsconfig.e2e.json"
+      "project": "e2e/client/tsconfig.e2e.json"
     }
   ],
   "test": {
