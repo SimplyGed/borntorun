@@ -1,10 +1,26 @@
 const express = require('express');
 const routes = express.Router();
 
+const eventService = require('./events/event.service');
+
 routes.get('/events', (req, res) => {
-    res.status(200).send([
-        { "id": 3, "name": "New York Marathon", "date": new Date("2017/11/05") }
-    ]);
+    eventService.getEvents(req, res);
+});
+
+routes.get('/event/:id', (req, res) => {
+    eventService.getEvent(req, res);
+});
+
+routes.post('/event', (req, res) => {
+    eventService.postEvent(req, res);
+});
+
+routes.put('/event/:id', (req, res) => {
+    eventService.putEvent(req, res);
+});
+
+routes.delete('/event/:id', (req, res) => {
+    eventService.deleteEvent(req, res);
 });
 
 routes.get('/results', (req, res) => {
